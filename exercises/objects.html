@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>Simple Page</title>
+</head>
+<body>
+	<h1>Objects</h1>    
+
+
+	<script>
+	var player1 = {name: "Fred", score: 10000, rank: 1};
+	var player2 = {name: "Alfred", score: 8000, rank: 2};
+
+	function showdetails(){
+		console.log(this.name + " has a score of " + this.score + "and rank of " + this.rank);
+
+	}
+
+	player1.details = showdetails;
+	player2.details = showdetails;
+
+	player1.details();
+
+	
+	</script>
+</body>
+</html>

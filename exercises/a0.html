@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+<div class="dropup">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropup
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<h1 id="title">Javascript Essential Training</h1>
+<!-- 
+This is HTML comment
+-->
+
+<ul id="mylist">
+<li>Coffee</li>
+<li>Tea</li>
+</ul>
+<p>Hello Ally</p>
+<p>Hello Alfred</p>
+<p id="jane">Hello Jane</p>
+<button id='button'>Click me</button>
+
+<p>Enter you name: <input type="text" id="name" onfocus="highlight(this)" onblur="upper()"></p>
+
+<!-- <button>Click 2</button>
+<button>Click 3</button>
+<button>Click 4</button>
+<button>Click 5</button> -->
+
+<!-- <button onclick="alert('Thank you for clicking')">Click Me</button> -->
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+<script>
+
+function upper() {
+	x = document.getElementById('name');
+	x.value = x.value.toUpperCase();
+}
+
+function highlight(x) {
+	x.style.backgroundColor="yellow";
+}
+// window.onload = function (){
+
+// 	alert("Hello World!!");
+// }
+
+document.getElementById("button").addEventListener('click',shout);
+
+function shout(){
+	//alert("You hit the jackpot");
+	a = document.getElementById("jane");
+	a.innerHTML= "you hit the jackpot";
+}
+// var a = document.getElementById('button');
+
+// a.onclick = function () {
+// 	alert("You hit me");
+
+// }
+// document.body.style.backgroundColor= "green";
+// var a =document.getElementById('jane');
+// a.style.color = "red";
+// a.style.fontSize = "50px";
+// var a = document.createElement("li");
+// var text=document.createTextNode("Water");
+// a.appendChild(text);
+// document.getElementById('mylist').appendChild(a);
+// var a = document.createElement("p");
+// var text=document.createTextNode("Hello Belinda");
+// a.appendChild(text);
+// document.getElementById('jane').appendChild(a);
+
+//var a = document.getElementById('title');
+// a.setAttribute('align','center');
+
+// console.log(a[1].innerHTML);
+
+// var a = document.getElementById('dom');
+// console.log(a.innerHTML);
+// var b = document.getElementById('title');
+// alert(b.innerHTML);
+// function f(x=5,y=4) {
+// 	return x*x+y*y;
+// }
+// console.log(f());
+
+// function area(r) {
+// 	return Math.PI*r*r;
+// }
+// var r = 4;
+// document.write("Area of circle = " + area(r).toFixed(2));
+//for-in loop
+// var person = {name:'Ally',height:160};
+
+// for (i in person) {
+// 	console.log(person[i]);
+// }
+// var a = [];
+
+// for(i=1;i<11;i++) {
+// 	a.push(i*i);
+// }
+// console.log(a);
+
+// var a = [3,4,5,7,8];
+
+// for (i in a) {
+// 	console.log(a[i]);
+// }
+//For loop
+// for (i=1;i<10;i++) {
+// 	console.log(i);
+// }
+
+//While loop for do-while loop
+// var a = 1;
+// do {
+// 	console.log(a*a);
+// 	a += 1;
+// }while (a<10)
+// while (a<10) {
+// 	console.log(a);
+// 	a += 1;
+// }
+
+//Control Structures
+// var a = 8;
+// var b = 8;
+
+// var c = (a>b) ? a : b
+// alert("the larger number is " + c);
+// if (a<b) {
+// 	alert("a is smaller than b");
+// } else {
+// 	if (a>b) {
+// 	alert("a is larger than b");
+// 	}
+// 	else {
+// 	alert("a is same as b");
+// }
+// }
+// var grade = 'C';
+// switch (grade) {
+// 	case 'A': alert("Well done!");
+// 	break;
+// 	case 'B': alert('Good job!');
+// 	break;
+// 	case 'C': alert('Work harder next time');
+// 	break;
+// 	default: alert('I am not sure your grade');
+// }
+
+// var dice = Math.floor((Math.random() * 6) + 1);
+
+// switch (dice) {
+// 	case 1:console.log('It is 1');
+// 	break;
+// 	case 2:console.log('It is 2');
+// 	break;
+// 	case 3:console.log('It is 3');
+// 	break;
+// 	case 4:console.log('It is 4');
+// 	break;
+// 	case 5:console.log('It is 5');
+// 	break;
+// 	case 6:console.log('It is 6');
+// 	break;
+// 	default:console.log('Not sure the dice ');
+// }
+//Object data type
+// var a = new Object();
+// a.name = "Ally";
+// a.height = 160;
+// a.salary = 4000;
+//var a = {name:'Ally',height:160};
+// console.log(a.name);
+// console.log(a.height);
+// document.write(a.name + "\'s height is " + a.height + " and salary is " + a.salary);
+
+//Math data type
+//a = Math.sin(Math.PI/2);
+//a = Math.random();
+//a = Math.min(5,6,7,2,9,0.3);
+//a = Math.ceil(4.4);
+// a = Math.floor(4.7);
+// console.log(a);
+
+// Data data type
+//var a = Date();
+// var a = new Date('2016-05-26');
+// a = new Date("May 26 2016");
+// document.write("The month is " +a.getMonth());
+// document.write("<br>");
+// document.write("The year is " + a.getFullYear());
+// document.write(a + "<br> This is another line");
+// document.write("<br> This is second line");
+// var a = ['saab','volvo','bmw'];
+// a.push('toyota');
+//a.pop();
+// a.unshift('nissan');
+// delete a[1];
+// a.sort();
+// a.reverse();
+//a.shift();
+//alert(a);
+// var a = true;
+// var b = false;
+// alert(a || b );
+//var str = "Hello Mr\'s Ang \n How are you?";
+//var str2 = str.split("@");
+//var str2 = str.replace("world","alfred");
+// var a = 1.5689;
+// var b = 2;
+// var c = a+b;
+//This is a javascript comment
+//alert(c);
+//console.log(str);
+//document.write(str);
+/*
+alert("Javascript Essential Training");
+console.log("Javascript Essential Training");
+document.write("<h1>Javascript Essential Training</h1>");
+*/
+</script>
+</body>
+</html>
