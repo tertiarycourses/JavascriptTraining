@@ -1,5 +1,5 @@
 # Javascript for Interactive Website Essential Training
-## by [Tertiary Infotech Pte. Ltd](https://www.tertiarycourses.com.sg/)
+## by [Tertiary Courses](https://www.tertiarycourses.com.sg/)
 
 These are the exercise files used for [Javascript for Interactive Website Essential Training](https://www.tertiarycourses.com.sg/javascript-for-interactive-website-essential-training-in-singapore.html) course. 
 
